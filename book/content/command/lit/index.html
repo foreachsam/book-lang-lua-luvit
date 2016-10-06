@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+
+<title>lit - luvit 學習筆記</title>
+
+
+<link rel="canonical" href="https://foreachsam.github.io/book-lang-lua-luvit/book/content/command/lit/">
+
+
+<meta name="author" content="foreachsam">
+
+
+<meta property="og:url" content="https://foreachsam.github.io/book-lang-lua-luvit/book/content/command/lit/">
+<meta property="og:title" content="lit - luvit 學習筆記">
+
+<meta name="apple-mobile-web-app-title" content="lit - luvit 學習筆記">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../assets/images/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../../../../../assets/images/favicon.ico">
+<style>
+	@font-face {
+		font-family: 'Icon';
+		src: url('../../../assets/fonts/icon.eot?52m981');
+		src: url('../../../assets/fonts/icon.eot?#iefix52m981') format('embedded-opentype'),
+		url('../../../assets/fonts/icon.woff?52m981') format('woff'),
+		url('../../../assets/fonts/icon.ttf?52m981') format('truetype'),
+		url('../../../assets/fonts/icon.svg?52m981#icon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+</style>
+<link rel="stylesheet" href="../../../assets/stylesheets/application-0dac3e5884.css"> 
+<link rel="stylesheet" href="../../../assets/stylesheets/palettes-05ab2406df.css">     
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
+<style>
+	body,
+	input {
+		font-family: 'Roboto',
+		Helvetica,
+		Arial,
+		sans-serif;
+	}
+
+	pre,
+	code {
+		font-family: 'Roboto Mono',
+		'Courier New',
+		'Courier',
+		monospace;
+	}
+</style>
+ 
+<script src="../../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+
+
+</head>
+
+
+  
+
+<body class="palette-primary-teal palette-accent-light-teal">
+	
+	<div class="backdrop">
+		<div class="backdrop-paper"></div>
+	</div>
+	<input class="toggle" type="checkbox" id="toggle-drawer">
+	<input class="toggle" type="checkbox" id="toggle-search">
+	<label class="toggle-button overlay" for="toggle-drawer"></label>
+	<header class="header">
+		<nav aria-label="Header">
+	<div class="bar default">
+		<div class="button button-menu" role="button" aria-label="Menu">
+			<label class="toggle-button icon icon-menu" for="toggle-drawer">
+				<span></span>
+			</label>
+		</div>
+		<div class="stretch">
+			<div class="title">
+				
+				<span class="path">
+            
+              
+                command <i class="icon icon-link"></i>
+              
+            
+          </span>  lit
+			</div>
+		</div>
+		  
+		<div class="button button-github" role="button" aria-label="GitHub">
+			<a href="https://github.com/foreachsam/book-lang-luvit" title="@foreachsam/book-lang-luvit on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+		</div>
+		
+		<div class="button button-search" role="button" aria-label="Search">
+			<label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+		</div>
+	</div>
+	<div class="bar search">
+		<div class="button button-close" role="button" aria-label="Close">
+			<label class="toggle-button icon icon-back" for="toggle-search"></label>
+		</div>
+		<div class="stretch">
+			<div class="field">
+				<input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+			</div>
+		</div>
+		<div class="button button-reset" role="button" aria-label="Search">
+			<button class="toggle-button icon icon-close" id="reset-search"></button>
+		</div>
+	</div>
+</nav>
+	</header>
+	<main class="main">
+		
+		<div class="drawer">
+			<nav aria-label="Navigation">
+
+	<a href="https://foreachsam.github.io/book-lang-lua-luvit/book" class="project" title="luvit 學習筆記">
+		<div class="banner">
+
+			<div class="name">
+				<strong>luvit 學習筆記<span class="version"></span></strong>
+
+			</div>
+		</div>
+	</a>
+	<div class="scrollable">
+		<div class="wrapper">
+
+			<div class="toc">
+				<ul>
+
+	
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="" title="首頁" href="../../.." itemprop="url">
+			首頁
+    	</a>
+	</div>
+	
+</li>
+
+
+	
+<li>
+	<span class="section">參考文件</span>
+	<ul>
+		
+
+			
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="" title="manual" href="../../reference/manual/" itemprop="url">
+			manual
+    	</a>
+	</div>
+	
+</li>
+
+
+		
+	</ul>
+</li>
+
+
+	
+<li>
+	<span class="section">command</span>
+	<ul>
+		
+
+			
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="current" title="lit" href="./" itemprop="url">
+			lit
+    	</a>
+	</div>
+	    
+	<ul>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="安裝方式" href="#_1" >
+                	安裝方式
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="使用說明文件" href="#_2" >
+                	使用說明文件
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="觀看 help" href="#help" >
+                	觀看 help
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="觀看版本" href="#_3" >
+                	觀看版本
+				</a>
+			</div>
+		</li>
+		
+	</ul>
+	 
+</li>
+
+
+		
+	</ul>
+</li>
+
+
+				</ul>
+
+				<hr>
+				<span class="section">The author</span>
+				<ul>
+	
+					<li>
+						<a href="https://foreachsam.github.io/" target="_blank" title="foreachsam">
+                  			foreachsam
+            			</a>
+					</li>
+	
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</nav>
+		</div>
+		<article class="article">
+			<div class="wrapper">
+				 <h1 id="lit-command">lit command</h1>
+<h2 id="_1">安裝方式</h2>
+<p>請參考「<a href="https://luvit.io/install.html">官網這篇</a>」，從「Get Lit」那開始。</p>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh</code></pre>
+
+
+<p>主要會產生兩個檔案「lit」和「luvi」。(還會產生其他的檔，例如「~/litconfig」)</p>
+<p>將「lit」移到「~/bin」</p>
+<pre class="code"><code class="language-sh">$ mv lit ~/bin</code></pre>
+
+
+<p>將「luvi」移到「~/bin」</p>
+<pre class="code"><code class="language-sh">$ mv luvi ~/bin</code></pre>
+
+
+<p>若要研讀「<a href="https://github.com/luvit/lit/blob/master/get-lit.sh">get-lit.sh</a>」，可以執行下面指令下載。</p>
+<pre class="code"><code class="language-sh">$ wget -c https://github.com/luvit/lit/raw/master/get-lit.sh</code></pre>
+
+
+<h2 id="_2">使用說明文件</h2>
+<ul>
+<li><a href="https://github.com/luvit/lit">https://github.com/luvit/lit</a></li>
+<li>Lit Wiki / <a href="https://github.com/luvit/lit/wiki/Creating-Your-First-Package">Creating-Your-First-Package</a></li>
+</ul>
+<h2 id="help">觀看 help</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ lit --help</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ lit -h</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ lit help</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>lit version: 3.4.4
+luvi version: v2.7.4
+command: help
+
+Lit CLI Commands
+================
+ lit help                    Show usage information.
+ lit version                 Show just the lit version.
+ lit update                  Update lit to the latest version.
+ lit make appdir             Build appdir into a single executable.
+ lit serve prefix            Start a lit package server (upstream or proxy).
+                             `prefix` is the protocol and host.
+                             EG: lit serve https://lit.luvit.io
+Local configuration
+-------------------
+ lit auth username           Verify local private key and set username.
+ lit up [url]                Go online.  Uses default upstream or url.
+ lit down                    Go offline (disable upstream).
+ lit config                  Print configuration.
+
+Package Management
+------------------
+ lit init                    Bootstrap a new package.lua file or an init.lua
+                             entry file
+ lit ls [path]               List packages in folder or zip.
+ lit install                 Install deps of package in cwd.
+ lit install names*          Install dependencies.
+ lit sync [author] [name]    Sync down upstream updates for any locally cached
+ lit publish path*           Add and publish packages to upstream.
+ lit add path*               Import, tag, and sign packages from disk.
+                             to the local db.
+Organization Management
+-----------------------
+ lit claim org               Claim github org of which you are a public member.
+ lit share org user          Add collaborator who can push to this lit org.
+ lit unclaim org             Remove yourself from a lit organization.
+
+done: success</code></pre>
+
+
+<h2 id="_3">觀看版本</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ lit version</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ lit --version</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ lit -v</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>lit version: 3.4.4
+luvi version: v2.7.4</code></pre>
+				<aside class="copyright" role="note">
+					 Copyright (c) foreachsam &ndash;  Documentation built with
+					<a href="http://www.mkdocs.org" target="_blank">MkDocs</a> using the
+					<a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a> theme.
+				</aside>
+				
+				<footer class="footer">
+					
+<nav class="pagination" aria-label="Footer">
+	<div class="previous">
+		
+		<a href="../../reference/manual/" title="manual">
+			<span class="direction">
+            上一頁
+          </span>
+			<div class="page">
+				<div class="button button-previous" role="button" aria-label="Previous">
+					<i class="icon icon-back"></i>
+				</div>
+				<div class="stretch">
+					<div class="title">
+						manual
+					</div>
+				</div>
+			</div>
+		</a>
+		
+	</div>
+	<div class="next">
+		
+	</div>
+</nav>
+
+				</footer>
+				
+			</div>
+		</article>
+		<div class="results" role="status" aria-live="polite">
+			<div class="scrollable">
+				<div class="wrapper">
+					<div class="meta"></div>
+					<div class="list"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script>
+		var base_url = '../../..';
+		var repo_id = '';
+	</script>
+	<script src="../../../assets/javascripts/application-997097ee0c.js"></script>
+	
+
+
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document,
+		'script', '//www.google-analytics.com/analytics.js', 'ga');
+	/* General initialization */
+	ga('create', 'UA-56999876-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+	/* Track outbound links */
+	var buttons = document.querySelectorAll('a');
+	Array.prototype.map.call(buttons, function(item) {
+		if (item.host != document.location.host) {
+			item.addEventListener('click', function() {
+				var action = item.getAttribute('data-action') || 'follow';
+				ga('send', 'event', 'outbound', action, item.href);
+			});
+		}
+	});
+	/* Register handler to log search on blur */
+	var query = document.querySelector('.query');
+	query.addEventListener('blur', function() {
+		if (this.value) {
+			var path = document.location.pathname;
+			ga('send', 'pageview', path + '?q=' + this.value);
+		}
+	});
+</script>
+
+
+</body>
+
+</html>

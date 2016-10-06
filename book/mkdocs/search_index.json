@@ -1,0 +1,64 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "luvit \u5b78\u7fd2\u7b46\u8a18\n\n\n\u9019\u662f\u5b78\u7fd2\u300c\nluvit\n\u300d\u7684\u7c21\u55ae\u7d00\u9304\u3002\n\n\n\u74b0\u5883\n\n\n\n\nXubuntu 16.04 64\u4f4d\u5143",
+            "title": "\u9996\u9801"
+        },
+        {
+            "location": "/#luvit",
+            "text": "\u9019\u662f\u5b78\u7fd2\u300c luvit \u300d\u7684\u7c21\u55ae\u7d00\u9304\u3002",
+            "title": "luvit \u5b78\u7fd2\u7b46\u8a18"
+        },
+        {
+            "location": "/#_1",
+            "text": "Xubuntu 16.04 64\u4f4d\u5143",
+            "title": "\u74b0\u5883"
+        },
+        {
+            "location": "/content/reference/manual/",
+            "text": "manual\n\n\n\u95b1\u8b80\u6587\u4ef6\n\n\n\n\nLuvit / \nDocs\n\n\nhttps://github.com/luvit/lit",
+            "title": "manual"
+        },
+        {
+            "location": "/content/reference/manual/#manual",
+            "text": "",
+            "title": "manual"
+        },
+        {
+            "location": "/content/reference/manual/#_1",
+            "text": "Luvit /  Docs  https://github.com/luvit/lit",
+            "title": "\u95b1\u8b80\u6587\u4ef6"
+        },
+        {
+            "location": "/content/command/lit/",
+            "text": "lit command\n\n\n\u5b89\u88dd\u65b9\u5f0f\n\n\n\u8acb\u53c3\u8003\u300c\n\u5b98\u7db2\u9019\u7bc7\n\u300d\uff0c\u5f9e\u300cGet Lit\u300d\u90a3\u958b\u59cb\u3002\n\n\n\u57f7\u884c\n\n\n$ curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh\n\n\n\n\n\u4e3b\u8981\u6703\u7522\u751f\u5169\u500b\u6a94\u6848\u300clit\u300d\u548c\u300cluvi\u300d\u3002(\u9084\u6703\u7522\u751f\u5176\u4ed6\u7684\u6a94\uff0c\u4f8b\u5982\u300c~/litconfig\u300d)\n\n\n\u5c07\u300clit\u300d\u79fb\u5230\u300c~/bin\u300d\n\n\n$ mv lit ~/bin\n\n\n\n\n\u5c07\u300cluvi\u300d\u79fb\u5230\u300c~/bin\u300d\n\n\n$ mv luvi ~/bin\n\n\n\n\n\u82e5\u8981\u7814\u8b80\u300c\nget-lit.sh\n\u300d\uff0c\u53ef\u4ee5\u57f7\u884c\u4e0b\u9762\u6307\u4ee4\u4e0b\u8f09\u3002\n\n\n$ wget -c https://github.com/luvit/lit/raw/master/get-lit.sh\n\n\n\n\n\u4f7f\u7528\u8aaa\u660e\u6587\u4ef6\n\n\n\n\nhttps://github.com/luvit/lit\n\n\nLit Wiki / \nCreating-Your-First-Package\n\n\n\n\n\u89c0\u770b help\n\n\n\u57f7\u884c\n\n\n$ lit --help\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ lit -h\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ lit help\n\n\n\n\n\u986f\u793a\n\n\nlit version: 3.4.4\nluvi version: v2.7.4\ncommand: help\n\nLit CLI Commands\n================\n lit help                    Show usage information.\n lit version                 Show just the lit version.\n lit update                  Update lit to the latest version.\n lit make appdir             Build appdir into a single executable.\n lit serve prefix            Start a lit package server (upstream or proxy).\n                             `prefix` is the protocol and host.\n                             EG: lit serve https://lit.luvit.io\nLocal configuration\n-------------------\n lit auth username           Verify local private key and set username.\n lit up [url]                Go online.  Uses default upstream or url.\n lit down                    Go offline (disable upstream).\n lit config                  Print configuration.\n\nPackage Management\n------------------\n lit init                    Bootstrap a new package.lua file or an init.lua\n                             entry file\n lit ls [path]               List packages in folder or zip.\n lit install                 Install deps of package in cwd.\n lit install names*          Install dependencies.\n lit sync [author] [name]    Sync down upstream updates for any locally cached\n lit publish path*           Add and publish packages to upstream.\n lit add path*               Import, tag, and sign packages from disk.\n                             to the local db.\nOrganization Management\n-----------------------\n lit claim org               Claim github org of which you are a public member.\n lit share org user          Add collaborator who can push to this lit org.\n lit unclaim org             Remove yourself from a lit organization.\n\ndone: success\n\n\n\n\n\u89c0\u770b\u7248\u672c\n\n\n\u57f7\u884c\n\n\n$ lit version\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ lit --version\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ lit -v\n\n\n\n\n\u986f\u793a\n\n\nlit version: 3.4.4\nluvi version: v2.7.4",
+            "title": "lit"
+        },
+        {
+            "location": "/content/command/lit/#lit-command",
+            "text": "",
+            "title": "lit command"
+        },
+        {
+            "location": "/content/command/lit/#_1",
+            "text": "\u8acb\u53c3\u8003\u300c \u5b98\u7db2\u9019\u7bc7 \u300d\uff0c\u5f9e\u300cGet Lit\u300d\u90a3\u958b\u59cb\u3002  \u57f7\u884c  $ curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh  \u4e3b\u8981\u6703\u7522\u751f\u5169\u500b\u6a94\u6848\u300clit\u300d\u548c\u300cluvi\u300d\u3002(\u9084\u6703\u7522\u751f\u5176\u4ed6\u7684\u6a94\uff0c\u4f8b\u5982\u300c~/litconfig\u300d)  \u5c07\u300clit\u300d\u79fb\u5230\u300c~/bin\u300d  $ mv lit ~/bin  \u5c07\u300cluvi\u300d\u79fb\u5230\u300c~/bin\u300d  $ mv luvi ~/bin  \u82e5\u8981\u7814\u8b80\u300c get-lit.sh \u300d\uff0c\u53ef\u4ee5\u57f7\u884c\u4e0b\u9762\u6307\u4ee4\u4e0b\u8f09\u3002  $ wget -c https://github.com/luvit/lit/raw/master/get-lit.sh",
+            "title": "\u5b89\u88dd\u65b9\u5f0f"
+        },
+        {
+            "location": "/content/command/lit/#_2",
+            "text": "https://github.com/luvit/lit  Lit Wiki /  Creating-Your-First-Package",
+            "title": "\u4f7f\u7528\u8aaa\u660e\u6587\u4ef6"
+        },
+        {
+            "location": "/content/command/lit/#help",
+            "text": "\u57f7\u884c  $ lit --help  \u6216\u662f\u57f7\u884c  $ lit -h  \u6216\u662f\u57f7\u884c  $ lit help  \u986f\u793a  lit version: 3.4.4\nluvi version: v2.7.4\ncommand: help\n\nLit CLI Commands\n================\n lit help                    Show usage information.\n lit version                 Show just the lit version.\n lit update                  Update lit to the latest version.\n lit make appdir             Build appdir into a single executable.\n lit serve prefix            Start a lit package server (upstream or proxy).\n                             `prefix` is the protocol and host.\n                             EG: lit serve https://lit.luvit.io\nLocal configuration\n-------------------\n lit auth username           Verify local private key and set username.\n lit up [url]                Go online.  Uses default upstream or url.\n lit down                    Go offline (disable upstream).\n lit config                  Print configuration.\n\nPackage Management\n------------------\n lit init                    Bootstrap a new package.lua file or an init.lua\n                             entry file\n lit ls [path]               List packages in folder or zip.\n lit install                 Install deps of package in cwd.\n lit install names*          Install dependencies.\n lit sync [author] [name]    Sync down upstream updates for any locally cached\n lit publish path*           Add and publish packages to upstream.\n lit add path*               Import, tag, and sign packages from disk.\n                             to the local db.\nOrganization Management\n-----------------------\n lit claim org               Claim github org of which you are a public member.\n lit share org user          Add collaborator who can push to this lit org.\n lit unclaim org             Remove yourself from a lit organization.\n\ndone: success",
+            "title": "\u89c0\u770b help"
+        },
+        {
+            "location": "/content/command/lit/#_3",
+            "text": "\u57f7\u884c  $ lit version  \u6216\u662f\u57f7\u884c  $ lit --version  \u6216\u662f\u57f7\u884c  $ lit -v  \u986f\u793a  lit version: 3.4.4\nluvi version: v2.7.4",
+            "title": "\u89c0\u770b\u7248\u672c"
+        }
+    ]
+}
